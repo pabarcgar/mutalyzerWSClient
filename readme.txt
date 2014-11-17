@@ -15,7 +15,7 @@ I Have used java tools wsimport to create this client:
 
 $ $JAVA_HOME/bin/wsimport -keep -verbose -p es.gbpa.mutalyzerWS https://mutalyzer.nl/services/?wsdl
 
-There is a problem. This command will fail because there is a complexType named 'transcriptInfo' and another one named 'TranscriptInfo'. wsimport creates a class to represent 'transcriptInfo' type and names it 'TranscriptInfo', to follow Java conventions. This causes a conflict, because wsimport is trying to create two classes with the same name in the same package. To solve it, we can use the name customization file 'nameCustomizations.xml' included in teh root dir of this project:
+There is a problem. This command will fail because there is a complexType named 'transcriptInfo' and another one named 'TranscriptInfo'. wsimport creates a class to represent 'transcriptInfo' type and names it 'TranscriptInfo', to follow Java conventions. This causes a conflict, because wsimport is trying to create two classes with the same name in the same package. To solve it, we can use the name customization file 'nameCustomizations.xml' included in the root dir of this project:
 
 $ JAVA_HOME/bin/wsimport -b nameCustomizations.xml -keep -verbose -p es.gbpa.mutalyzerWSClient https://mutalyzer.nl/services/?wsdl
 
