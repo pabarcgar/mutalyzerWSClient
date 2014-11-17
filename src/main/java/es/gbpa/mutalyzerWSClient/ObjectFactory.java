@@ -57,7 +57,6 @@ public class ObjectFactory {
     private final static QName _MonitorBatchJob_QNAME = new QName("http://mutalyzer.nl/2.0/services", "monitorBatchJob");
     private final static QName _SliceChromosomeByGene_QNAME = new QName("http://mutalyzer.nl/2.0/services", "sliceChromosomeByGene");
     private final static QName _SliceChromosomeByGeneResponse_QNAME = new QName("http://mutalyzer.nl/2.0/services", "sliceChromosomeByGeneResponse");
-    private final static QName _TranscriptInfo_QNAME = new QName("http://mutalyzer.nl/2.0/services", "transcriptInfo");
     private final static QName _GetTranscriptsRange_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getTranscriptsRange");
     private final static QName _SliceChromosomeResponse_QNAME = new QName("http://mutalyzer.nl/2.0/services", "sliceChromosomeResponse");
     private final static QName _GetdbSNPDescriptionsResponse_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getdbSNPDescriptionsResponse");
@@ -75,7 +74,6 @@ public class ObjectFactory {
     private final static QName _SliceChromosome_QNAME = new QName("http://mutalyzer.nl/2.0/services", "sliceChromosome");
     private final static QName _GetBatchJobResponse_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getBatchJobResponse");
     private final static QName _ChromosomeName_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromosomeName");
-    private final static QName _TranscriptInformation_QNAME = new QName("http://mutalyzer.nl/2.0/services", "TranscriptInformation");
     private final static QName _GetTranscripts_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getTranscripts");
     private final static QName _GetchromNameResponse_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getchromNameResponse");
     private final static QName _GetGeneName_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getGeneName");
@@ -104,10 +102,14 @@ public class ObjectFactory {
     private final static QName _ExonInfoArray_QNAME = new QName("http://mutalyzer.nl/2.0/services", "ExonInfoArray");
     private final static QName _NumberConversion_QNAME = new QName("http://mutalyzer.nl/2.0/services", "numberConversion");
     private final static QName _RawVar_QNAME = new QName("http://mutalyzer.nl/2.0/services", "RawVar");
+    private final static QName _TranscriptInfo_QNAME = new QName("http://mutalyzer.nl/2.0/services", "TranscriptInfo");
+    private final static QName _GetCacheCreatedSince_QNAME = new QName("http://mutalyzer.nl/2.0/services", "created_since");
+    private final static QName _NumberConversionResponseNumberConversionResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "numberConversionResult");
+    private final static QName _SubmitBatchJobResponseSubmitBatchJobResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "submitBatchJobResult");
+    private final static QName _GetTranscriptsVersions_QNAME = new QName("http://mutalyzer.nl/2.0/services", "versions");
     private final static QName _GetTranscriptsMappingResponseGetTranscriptsMappingResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getTranscriptsMappingResult");
     private final static QName _GetTranscriptsRangeResponseGetTranscriptsRangeResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getTranscriptsRangeResult");
-    private final static QName _NumberConversionResponseNumberConversionResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "numberConversionResult");
-    private final static QName _MonitorBatchJobResponseMonitorBatchJobResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "monitorBatchJobResult");
+    private final static QName _CheckSyntaxResponseCheckSyntaxResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "checkSyntaxResult");
     private final static QName _InfoOutputReleaseDate_QNAME = new QName("http://mutalyzer.nl/2.0/services", "releaseDate");
     private final static QName _InfoOutputAnnouncement_QNAME = new QName("http://mutalyzer.nl/2.0/services", "announcement");
     private final static QName _InfoOutputAnnouncementUrl_QNAME = new QName("http://mutalyzer.nl/2.0/services", "announcementUrl");
@@ -117,8 +119,8 @@ public class ObjectFactory {
     private final static QName _InfoOutputNomenclatureVersionParts_QNAME = new QName("http://mutalyzer.nl/2.0/services", "nomenclatureVersionParts");
     private final static QName _InfoOutputVersion_QNAME = new QName("http://mutalyzer.nl/2.0/services", "version");
     private final static QName _InfoOutputServerName_QNAME = new QName("http://mutalyzer.nl/2.0/services", "serverName");
-    private final static QName _AlleleAllele_QNAME = new QName("http://mutalyzer.nl/2.0/services", "allele");
-    private final static QName _DescriptionExtractResponseDescriptionExtractResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "descriptionExtractResult");
+    private final static QName _GetdbSNPDescriptionsResponseGetdbSNPDescriptionsResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getdbSNPDescriptionsResult");
+    private final static QName _GetTranscriptsAndInfoGeneName_QNAME = new QName("http://mutalyzer.nl/2.0/services", "geneName");
     private final static QName _MappingEndmain_QNAME = new QName("http://mutalyzer.nl/2.0/services", "endmain");
     private final static QName _MappingStartmain_QNAME = new QName("http://mutalyzer.nl/2.0/services", "startmain");
     private final static QName _MappingEndoffset_QNAME = new QName("http://mutalyzer.nl/2.0/services", "endoffset");
@@ -129,33 +131,20 @@ public class ObjectFactory {
     private final static QName _MappingStartG_QNAME = new QName("http://mutalyzer.nl/2.0/services", "start_g");
     private final static QName _MappingStartoffset_QNAME = new QName("http://mutalyzer.nl/2.0/services", "startoffset");
     private final static QName _InfoResponseInfoResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "infoResult");
+    private final static QName _ExonInfoChromStart_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromStart");
+    private final static QName _ExonInfoChromStop_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromStop");
+    private final static QName _NumberConversionGene_QNAME = new QName("http://mutalyzer.nl/2.0/services", "gene");
+    private final static QName _GetBatchJobResponseGetBatchJobResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getBatchJobResult");
+    private final static QName _MappingInfoResponseMappingInfoResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "mappingInfoResult");
+    private final static QName _RunMutalyzerResponseRunMutalyzerResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "runMutalyzerResult");
+    private final static QName _GetTranscriptsByGeneNameResponseGetTranscriptsByGeneNameResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getTranscriptsByGeneNameResult");
+    private final static QName _AlleleAllele_QNAME = new QName("http://mutalyzer.nl/2.0/services", "allele");
+    private final static QName _SubmitBatchJobArgument_QNAME = new QName("http://mutalyzer.nl/2.0/services", "argument");
+    private final static QName _SubmitBatchJobProcess_QNAME = new QName("http://mutalyzer.nl/2.0/services", "process");
+    private final static QName _MonitorBatchJobResponseMonitorBatchJobResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "monitorBatchJobResult");
     private final static QName _TranscriptTransStop_QNAME = new QName("http://mutalyzer.nl/2.0/services", "trans_stop");
     private final static QName _TranscriptCDSStop_QNAME = new QName("http://mutalyzer.nl/2.0/services", "CDS_stop");
     private final static QName _TranscriptTransStart_QNAME = new QName("http://mutalyzer.nl/2.0/services", "trans_start");
-    private final static QName _GetCacheCreatedSince_QNAME = new QName("http://mutalyzer.nl/2.0/services", "created_since");
-    private final static QName _GetTranscriptsByGeneNameResponseGetTranscriptsByGeneNameResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getTranscriptsByGeneNameResult");
-    private final static QName _GetBatchJobResponseGetBatchJobResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getBatchJobResult");
-    private final static QName _SubmitBatchJobArgument_QNAME = new QName("http://mutalyzer.nl/2.0/services", "argument");
-    private final static QName _SubmitBatchJobProcess_QNAME = new QName("http://mutalyzer.nl/2.0/services", "process");
-    private final static QName _GetCacheResponseGetCacheResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getCacheResult");
-    private final static QName _SubmitBatchJobResponseSubmitBatchJobResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "submitBatchJobResult");
-    private final static QName _GetTranscriptsAndInfoGeneName_QNAME = new QName("http://mutalyzer.nl/2.0/services", "geneName");
-    private final static QName _GetGeneAndTranscriptResponseGetGeneAndTranscriptResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getGeneAndTranscriptResult");
-    private final static QName _RunMutalyzerResponseRunMutalyzerResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "runMutalyzerResult");
-    private final static QName _CheckSyntaxResponseCheckSyntaxResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "checkSyntaxResult");
-    private final static QName _GetTranscriptsAndInfoResponseGetTranscriptsAndInfoResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getTranscriptsAndInfoResult");
-    private final static QName _MappingInfoResponseMappingInfoResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "mappingInfoResult");
-    private final static QName _NumberConversionGene_QNAME = new QName("http://mutalyzer.nl/2.0/services", "gene");
-    private final static QName _TranscriptInfoResponseTranscriptInfoResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "transcriptInfoResult");
-    private final static QName _ExonInfoChromStart_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromStart");
-    private final static QName _ExonInfoChromStop_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromStop");
-    private final static QName _GetTranscriptsVersions_QNAME = new QName("http://mutalyzer.nl/2.0/services", "versions");
-    private final static QName _TranscriptInformationExons_QNAME = new QName("http://mutalyzer.nl/2.0/services", "exons");
-    private final static QName _TranscriptInformationChromCDSStart_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromCDSStart");
-    private final static QName _TranscriptInformationProteinTranscript_QNAME = new QName("http://mutalyzer.nl/2.0/services", "proteinTranscript");
-    private final static QName _TranscriptInformationChromTransStart_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromTransStart");
-    private final static QName _TranscriptInformationChromCDSStop_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromCDSStop");
-    private final static QName _TranscriptInformationChromTransEnd_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromTransEnd");
     private final static QName _MutalyzerOutputNewProtein_QNAME = new QName("http://mutalyzer.nl/2.0/services", "newProtein");
     private final static QName _MutalyzerOutputTranscriptDescriptions_QNAME = new QName("http://mutalyzer.nl/2.0/services", "transcriptDescriptions");
     private final static QName _MutalyzerOutputSummary_QNAME = new QName("http://mutalyzer.nl/2.0/services", "summary");
@@ -167,6 +156,7 @@ public class ObjectFactory {
     private final static QName _MutalyzerOutputSourceGi_QNAME = new QName("http://mutalyzer.nl/2.0/services", "sourceGi");
     private final static QName _MutalyzerOutputOrigMRNA_QNAME = new QName("http://mutalyzer.nl/2.0/services", "origMRNA");
     private final static QName _MutalyzerOutputErrors_QNAME = new QName("http://mutalyzer.nl/2.0/services", "errors");
+    private final static QName _MutalyzerOutputExons_QNAME = new QName("http://mutalyzer.nl/2.0/services", "exons");
     private final static QName _MutalyzerOutputSourceVersion_QNAME = new QName("http://mutalyzer.nl/2.0/services", "sourceVersion");
     private final static QName _MutalyzerOutputNewCDS_QNAME = new QName("http://mutalyzer.nl/2.0/services", "newCDS");
     private final static QName _MutalyzerOutputOriginal_QNAME = new QName("http://mutalyzer.nl/2.0/services", "original");
@@ -176,14 +166,23 @@ public class ObjectFactory {
     private final static QName _MutalyzerOutputOrigCDS_QNAME = new QName("http://mutalyzer.nl/2.0/services", "origCDS");
     private final static QName _MutalyzerOutputAltProtein_QNAME = new QName("http://mutalyzer.nl/2.0/services", "altProtein");
     private final static QName _MutalyzerOutputWarnings_QNAME = new QName("http://mutalyzer.nl/2.0/services", "warnings");
+    private final static QName _DescriptionExtractResponseDescriptionExtractResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "descriptionExtractResult");
+    private final static QName _GetTranscriptsAndInfoResponseGetTranscriptsAndInfoResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getTranscriptsAndInfoResult");
+    private final static QName _GetCacheResponseGetCacheResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getCacheResult");
+    private final static QName _TranscriptInfoResponseTranscriptInfoResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "transcriptInfoResult");
+    private final static QName _GetGeneAndTranscriptResponseGetGeneAndTranscriptResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getGeneAndTranscriptResult");
+    private final static QName _GetTranscriptsResponseGetTranscriptsResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getTranscriptsResult");
     private final static QName _CacheEntryCached_QNAME = new QName("http://mutalyzer.nl/2.0/services", "cached");
     private final static QName _CacheEntryChromosomeStart_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromosomeStart");
     private final static QName _CacheEntryGi_QNAME = new QName("http://mutalyzer.nl/2.0/services", "gi");
     private final static QName _CacheEntryChromosomeOrientation_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromosomeOrientation");
     private final static QName _CacheEntryChromosomeStop_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromosomeStop");
     private final static QName _CacheEntryUrl_QNAME = new QName("http://mutalyzer.nl/2.0/services", "url");
-    private final static QName _GetdbSNPDescriptionsResponseGetdbSNPDescriptionsResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getdbSNPDescriptionsResult");
-    private final static QName _GetTranscriptsResponseGetTranscriptsResult_QNAME = new QName("http://mutalyzer.nl/2.0/services", "getTranscriptsResult");
+    private final static QName _TranscriptInfoChromCDSStart_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromCDSStart");
+    private final static QName _TranscriptInfoProteinTranscript_QNAME = new QName("http://mutalyzer.nl/2.0/services", "proteinTranscript");
+    private final static QName _TranscriptInfoChromTransStart_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromTransStart");
+    private final static QName _TranscriptInfoChromCDSStop_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromCDSStop");
+    private final static QName _TranscriptInfoChromTransEnd_QNAME = new QName("http://mutalyzer.nl/2.0/services", "chromTransEnd");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: es.gbpa.mutalyzerWSClient
@@ -425,11 +424,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TranscriptInfo }
+     * Create an instance of {@link TranscriptInfoByNM }
      * 
      */
-    public TranscriptInfo createTranscriptInfo() {
-        return new TranscriptInfo();
+    public TranscriptInfoByNM createTranscriptInfoByNM() {
+        return new TranscriptInfoByNM();
     }
 
     /**
@@ -598,14 +597,6 @@ public class ObjectFactory {
      */
     public GetTranscripts createGetTranscripts() {
         return new GetTranscripts();
-    }
-
-    /**
-     * Create an instance of {@link TranscriptInformation }
-     * 
-     */
-    public TranscriptInformation createTranscriptInformation() {
-        return new TranscriptInformation();
     }
 
     /**
@@ -814,6 +805,14 @@ public class ObjectFactory {
      */
     public NumberConversion createNumberConversion() {
         return new NumberConversion();
+    }
+
+    /**
+     * Create an instance of {@link TranscriptInfo }
+     * 
+     */
+    public TranscriptInfo createTranscriptInfo() {
+        return new TranscriptInfo();
     }
 
     /**
@@ -1096,12 +1095,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TranscriptInfo }{@code >}}
+     * Create an instance of {@link ElementTranscriptInfoByNM }}
      * 
      */
     @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "transcriptInfo")
-    public JAXBElement<TranscriptInfo> createTranscriptInfo(TranscriptInfo value) {
-        return new JAXBElement<TranscriptInfo>(_TranscriptInfo_QNAME, TranscriptInfo.class, null, value);
+    public ElementTranscriptInfoByNM createElementTranscriptInfoByNM(TranscriptInfoByNM value) {
+        return new ElementTranscriptInfoByNM(value);
     }
 
     /**
@@ -1255,15 +1254,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "chromosomeName")
     public JAXBElement<ChromosomeName> createChromosomeName(ChromosomeName value) {
         return new JAXBElement<ChromosomeName>(_ChromosomeName_QNAME, ChromosomeName.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TranscriptInformation }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "TranscriptInformation")
-    public JAXBElement<TranscriptInformation> createTranscriptInformation(TranscriptInformation value) {
-        return new JAXBElement<TranscriptInformation>(_TranscriptInformation_QNAME, TranscriptInformation.class, null, value);
     }
 
     /**
@@ -1519,6 +1509,51 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TranscriptInfo }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "TranscriptInfo")
+    public JAXBElement<TranscriptInfo> createTranscriptInfo(TranscriptInfo value) {
+        return new JAXBElement<TranscriptInfo>(_TranscriptInfo_QNAME, TranscriptInfo.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "created_since", scope = GetCache.class)
+    public JAXBElement<XMLGregorianCalendar> createGetCacheCreatedSince(XMLGregorianCalendar value) {
+        return new JAXBElement<XMLGregorianCalendar>(_GetCacheCreatedSince_QNAME, XMLGregorianCalendar.class, GetCache.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link StringArray }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "numberConversionResult", scope = NumberConversionResponse.class)
+    public JAXBElement<StringArray> createNumberConversionResponseNumberConversionResult(StringArray value) {
+        return new JAXBElement<StringArray>(_NumberConversionResponseNumberConversionResult_QNAME, StringArray.class, NumberConversionResponse.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "submitBatchJobResult", scope = SubmitBatchJobResponse.class)
+    public JAXBElement<String> createSubmitBatchJobResponseSubmitBatchJobResult(String value) {
+        return new JAXBElement<String>(_SubmitBatchJobResponseSubmitBatchJobResult_QNAME, String.class, SubmitBatchJobResponse.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "versions", scope = GetTranscripts.class)
+    public JAXBElement<Boolean> createGetTranscriptsVersions(Boolean value) {
+        return new JAXBElement<Boolean>(_GetTranscriptsVersions_QNAME, Boolean.class, GetTranscripts.class, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TranscriptMappingInfoArray }{@code >}}
      * 
      */
@@ -1537,21 +1572,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link StringArray }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link CheckSyntaxOutput }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "numberConversionResult", scope = NumberConversionResponse.class)
-    public JAXBElement<StringArray> createNumberConversionResponseNumberConversionResult(StringArray value) {
-        return new JAXBElement<StringArray>(_NumberConversionResponseNumberConversionResult_QNAME, StringArray.class, NumberConversionResponse.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "monitorBatchJobResult", scope = MonitorBatchJobResponse.class)
-    public JAXBElement<BigInteger> createMonitorBatchJobResponseMonitorBatchJobResult(BigInteger value) {
-        return new JAXBElement<BigInteger>(_MonitorBatchJobResponseMonitorBatchJobResult_QNAME, BigInteger.class, MonitorBatchJobResponse.class, value);
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "checkSyntaxResult", scope = CheckSyntaxResponse.class)
+    public JAXBElement<CheckSyntaxOutput> createCheckSyntaxResponseCheckSyntaxResult(CheckSyntaxOutput value) {
+        return new JAXBElement<CheckSyntaxOutput>(_CheckSyntaxResponseCheckSyntaxResult_QNAME, CheckSyntaxOutput.class, CheckSyntaxResponse.class, value);
     }
 
     /**
@@ -1636,21 +1662,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link RawVarArray }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link StringArray }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "allele", scope = Allele.class)
-    public JAXBElement<RawVarArray> createAlleleAllele(RawVarArray value) {
-        return new JAXBElement<RawVarArray>(_AlleleAllele_QNAME, RawVarArray.class, Allele.class, value);
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "getdbSNPDescriptionsResult", scope = GetdbSNPDescriptionsResponse.class)
+    public JAXBElement<StringArray> createGetdbSNPDescriptionsResponseGetdbSNPDescriptionsResult(StringArray value) {
+        return new JAXBElement<StringArray>(_GetdbSNPDescriptionsResponseGetdbSNPDescriptionsResult_QNAME, StringArray.class, GetdbSNPDescriptionsResponse.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Allele }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "descriptionExtractResult", scope = DescriptionExtractResponse.class)
-    public JAXBElement<Allele> createDescriptionExtractResponseDescriptionExtractResult(Allele value) {
-        return new JAXBElement<Allele>(_DescriptionExtractResponseDescriptionExtractResult_QNAME, Allele.class, DescriptionExtractResponse.class, value);
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "geneName", scope = GetTranscriptsAndInfo.class)
+    public JAXBElement<String> createGetTranscriptsAndInfoGeneName(String value) {
+        return new JAXBElement<String>(_GetTranscriptsAndInfoGeneName_QNAME, String.class, GetTranscriptsAndInfo.class, value);
     }
 
     /**
@@ -1747,36 +1773,54 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "trans_stop", scope = Transcript.class)
-    public JAXBElement<BigInteger> createTranscriptTransStop(BigInteger value) {
-        return new JAXBElement<BigInteger>(_TranscriptTransStop_QNAME, BigInteger.class, Transcript.class, value);
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "chromStart", scope = ExonInfo.class)
+    public JAXBElement<BigInteger> createExonInfoChromStart(BigInteger value) {
+        return new JAXBElement<BigInteger>(_ExonInfoChromStart_QNAME, BigInteger.class, ExonInfo.class, value);
     }
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "CDS_stop", scope = Transcript.class)
-    public JAXBElement<BigInteger> createTranscriptCDSStop(BigInteger value) {
-        return new JAXBElement<BigInteger>(_TranscriptCDSStop_QNAME, BigInteger.class, Transcript.class, value);
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "chromStop", scope = ExonInfo.class)
+    public JAXBElement<BigInteger> createExonInfoChromStop(BigInteger value) {
+        return new JAXBElement<BigInteger>(_ExonInfoChromStop_QNAME, BigInteger.class, ExonInfo.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "trans_start", scope = Transcript.class)
-    public JAXBElement<BigInteger> createTranscriptTransStart(BigInteger value) {
-        return new JAXBElement<BigInteger>(_TranscriptTransStart_QNAME, BigInteger.class, Transcript.class, value);
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "gene", scope = NumberConversion.class)
+    public JAXBElement<String> createNumberConversionGene(String value) {
+        return new JAXBElement<String>(_NumberConversionGene_QNAME, String.class, NumberConversion.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link byte[]}{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "created_since", scope = GetCache.class)
-    public JAXBElement<XMLGregorianCalendar> createGetCacheCreatedSince(XMLGregorianCalendar value) {
-        return new JAXBElement<XMLGregorianCalendar>(_GetCacheCreatedSince_QNAME, XMLGregorianCalendar.class, GetCache.class, value);
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "getBatchJobResult", scope = GetBatchJobResponse.class)
+    public JAXBElement<byte[]> createGetBatchJobResponseGetBatchJobResult(byte[] value) {
+        return new JAXBElement<byte[]>(_GetBatchJobResponseGetBatchJobResult_QNAME, byte[].class, GetBatchJobResponse.class, ((byte[]) value));
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Mapping }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "mappingInfoResult", scope = MappingInfoResponse.class)
+    public JAXBElement<Mapping> createMappingInfoResponseMappingInfoResult(Mapping value) {
+        return new JAXBElement<Mapping>(_MappingInfoResponseMappingInfoResult_QNAME, Mapping.class, MappingInfoResponse.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link MutalyzerOutput }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "runMutalyzerResult", scope = RunMutalyzerResponse.class)
+    public JAXBElement<MutalyzerOutput> createRunMutalyzerResponseRunMutalyzerResult(MutalyzerOutput value) {
+        return new JAXBElement<MutalyzerOutput>(_RunMutalyzerResponseRunMutalyzerResult_QNAME, MutalyzerOutput.class, RunMutalyzerResponse.class, value);
     }
 
     /**
@@ -1789,12 +1833,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link byte[]}{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link RawVarArray }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "getBatchJobResult", scope = GetBatchJobResponse.class)
-    public JAXBElement<byte[]> createGetBatchJobResponseGetBatchJobResult(byte[] value) {
-        return new JAXBElement<byte[]>(_GetBatchJobResponseGetBatchJobResult_QNAME, byte[].class, GetBatchJobResponse.class, ((byte[]) value));
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "allele", scope = Allele.class)
+    public JAXBElement<RawVarArray> createAlleleAllele(RawVarArray value) {
+        return new JAXBElement<RawVarArray>(_AlleleAllele_QNAME, RawVarArray.class, Allele.class, value);
     }
 
     /**
@@ -1816,183 +1860,39 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CacheEntryArray }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "getCacheResult", scope = GetCacheResponse.class)
-    public JAXBElement<CacheEntryArray> createGetCacheResponseGetCacheResult(CacheEntryArray value) {
-        return new JAXBElement<CacheEntryArray>(_GetCacheResponseGetCacheResult_QNAME, CacheEntryArray.class, GetCacheResponse.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SoapMessageArray }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "messages", scope = CheckSyntaxOutput.class)
-    public JAXBElement<SoapMessageArray> createCheckSyntaxOutputMessages(SoapMessageArray value) {
-        return new JAXBElement<SoapMessageArray>(_MappingMessages_QNAME, SoapMessageArray.class, CheckSyntaxOutput.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "submitBatchJobResult", scope = SubmitBatchJobResponse.class)
-    public JAXBElement<String> createSubmitBatchJobResponseSubmitBatchJobResult(String value) {
-        return new JAXBElement<String>(_SubmitBatchJobResponseSubmitBatchJobResult_QNAME, String.class, SubmitBatchJobResponse.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "geneName", scope = GetTranscriptsAndInfo.class)
-    public JAXBElement<String> createGetTranscriptsAndInfoGeneName(String value) {
-        return new JAXBElement<String>(_GetTranscriptsAndInfoGeneName_QNAME, String.class, GetTranscriptsAndInfo.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TranscriptNameInfo }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "getGeneAndTranscriptResult", scope = GetGeneAndTranscriptResponse.class)
-    public JAXBElement<TranscriptNameInfo> createGetGeneAndTranscriptResponseGetGeneAndTranscriptResult(TranscriptNameInfo value) {
-        return new JAXBElement<TranscriptNameInfo>(_GetGeneAndTranscriptResponseGetGeneAndTranscriptResult_QNAME, TranscriptNameInfo.class, GetGeneAndTranscriptResponse.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link MutalyzerOutput }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "runMutalyzerResult", scope = RunMutalyzerResponse.class)
-    public JAXBElement<MutalyzerOutput> createRunMutalyzerResponseRunMutalyzerResult(MutalyzerOutput value) {
-        return new JAXBElement<MutalyzerOutput>(_RunMutalyzerResponseRunMutalyzerResult_QNAME, MutalyzerOutput.class, RunMutalyzerResponse.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CheckSyntaxOutput }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "checkSyntaxResult", scope = CheckSyntaxResponse.class)
-    public JAXBElement<CheckSyntaxOutput> createCheckSyntaxResponseCheckSyntaxResult(CheckSyntaxOutput value) {
-        return new JAXBElement<CheckSyntaxOutput>(_CheckSyntaxResponseCheckSyntaxResult_QNAME, CheckSyntaxOutput.class, CheckSyntaxResponse.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TranscriptInfoArray }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "getTranscriptsAndInfoResult", scope = GetTranscriptsAndInfoResponse.class)
-    public JAXBElement<TranscriptInfoArray> createGetTranscriptsAndInfoResponseGetTranscriptsAndInfoResult(TranscriptInfoArray value) {
-        return new JAXBElement<TranscriptInfoArray>(_GetTranscriptsAndInfoResponseGetTranscriptsAndInfoResult_QNAME, TranscriptInfoArray.class, GetTranscriptsAndInfoResponse.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Mapping }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "mappingInfoResult", scope = MappingInfoResponse.class)
-    public JAXBElement<Mapping> createMappingInfoResponseMappingInfoResult(Mapping value) {
-        return new JAXBElement<Mapping>(_MappingInfoResponseMappingInfoResult_QNAME, Mapping.class, MappingInfoResponse.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "gene", scope = NumberConversion.class)
-    public JAXBElement<String> createNumberConversionGene(String value) {
-        return new JAXBElement<String>(_NumberConversionGene_QNAME, String.class, NumberConversion.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Transcript }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "transcriptInfoResult", scope = TranscriptInfoResponse.class)
-    public JAXBElement<Transcript> createTranscriptInfoResponseTranscriptInfoResult(Transcript value) {
-        return new JAXBElement<Transcript>(_TranscriptInfoResponseTranscriptInfoResult_QNAME, Transcript.class, TranscriptInfoResponse.class, value);
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "monitorBatchJobResult", scope = MonitorBatchJobResponse.class)
+    public JAXBElement<BigInteger> createMonitorBatchJobResponseMonitorBatchJobResult(BigInteger value) {
+        return new JAXBElement<BigInteger>(_MonitorBatchJobResponseMonitorBatchJobResult_QNAME, BigInteger.class, MonitorBatchJobResponse.class, value);
     }
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "chromStart", scope = ExonInfo.class)
-    public JAXBElement<BigInteger> createExonInfoChromStart(BigInteger value) {
-        return new JAXBElement<BigInteger>(_ExonInfoChromStart_QNAME, BigInteger.class, ExonInfo.class, value);
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "trans_stop", scope = Transcript.class)
+    public JAXBElement<BigInteger> createTranscriptTransStop(BigInteger value) {
+        return new JAXBElement<BigInteger>(_TranscriptTransStop_QNAME, BigInteger.class, Transcript.class, value);
     }
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "chromStop", scope = ExonInfo.class)
-    public JAXBElement<BigInteger> createExonInfoChromStop(BigInteger value) {
-        return new JAXBElement<BigInteger>(_ExonInfoChromStop_QNAME, BigInteger.class, ExonInfo.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "versions", scope = GetTranscripts.class)
-    public JAXBElement<Boolean> createGetTranscriptsVersions(Boolean value) {
-        return new JAXBElement<Boolean>(_GetTranscriptsVersions_QNAME, Boolean.class, GetTranscripts.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ExonInfoArray }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "exons", scope = TranscriptInformation.class)
-    public JAXBElement<ExonInfoArray> createTranscriptInformationExons(ExonInfoArray value) {
-        return new JAXBElement<ExonInfoArray>(_TranscriptInformationExons_QNAME, ExonInfoArray.class, TranscriptInformation.class, value);
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "CDS_stop", scope = Transcript.class)
+    public JAXBElement<BigInteger> createTranscriptCDSStop(BigInteger value) {
+        return new JAXBElement<BigInteger>(_TranscriptCDSStop_QNAME, BigInteger.class, Transcript.class, value);
     }
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "chromCDSStart", scope = TranscriptInformation.class)
-    public JAXBElement<BigInteger> createTranscriptInformationChromCDSStart(BigInteger value) {
-        return new JAXBElement<BigInteger>(_TranscriptInformationChromCDSStart_QNAME, BigInteger.class, TranscriptInformation.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ProteinTranscript }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "proteinTranscript", scope = TranscriptInformation.class)
-    public JAXBElement<ProteinTranscript> createTranscriptInformationProteinTranscript(ProteinTranscript value) {
-        return new JAXBElement<ProteinTranscript>(_TranscriptInformationProteinTranscript_QNAME, ProteinTranscript.class, TranscriptInformation.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "chromTransStart", scope = TranscriptInformation.class)
-    public JAXBElement<BigInteger> createTranscriptInformationChromTransStart(BigInteger value) {
-        return new JAXBElement<BigInteger>(_TranscriptInformationChromTransStart_QNAME, BigInteger.class, TranscriptInformation.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "chromCDSStop", scope = TranscriptInformation.class)
-    public JAXBElement<BigInteger> createTranscriptInformationChromCDSStop(BigInteger value) {
-        return new JAXBElement<BigInteger>(_TranscriptInformationChromCDSStop_QNAME, BigInteger.class, TranscriptInformation.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "chromTransEnd", scope = TranscriptInformation.class)
-    public JAXBElement<BigInteger> createTranscriptInformationChromTransEnd(BigInteger value) {
-        return new JAXBElement<BigInteger>(_TranscriptInformationChromTransEnd_QNAME, BigInteger.class, TranscriptInformation.class, value);
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "trans_start", scope = Transcript.class)
+    public JAXBElement<BigInteger> createTranscriptTransStart(BigInteger value) {
+        return new JAXBElement<BigInteger>(_TranscriptTransStart_QNAME, BigInteger.class, Transcript.class, value);
     }
 
     /**
@@ -2109,7 +2009,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "exons", scope = MutalyzerOutput.class)
     public JAXBElement<ExonInfoArray> createMutalyzerOutputExons(ExonInfoArray value) {
-        return new JAXBElement<ExonInfoArray>(_TranscriptInformationExons_QNAME, ExonInfoArray.class, MutalyzerOutput.class, value);
+        return new JAXBElement<ExonInfoArray>(_MutalyzerOutputExons_QNAME, ExonInfoArray.class, MutalyzerOutput.class, value);
     }
 
     /**
@@ -2194,6 +2094,60 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Allele }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "descriptionExtractResult", scope = DescriptionExtractResponse.class)
+    public JAXBElement<Allele> createDescriptionExtractResponseDescriptionExtractResult(Allele value) {
+        return new JAXBElement<Allele>(_DescriptionExtractResponseDescriptionExtractResult_QNAME, Allele.class, DescriptionExtractResponse.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TranscriptInfoArray }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "getTranscriptsAndInfoResult", scope = GetTranscriptsAndInfoResponse.class)
+    public JAXBElement<TranscriptInfoArray> createGetTranscriptsAndInfoResponseGetTranscriptsAndInfoResult(TranscriptInfoArray value) {
+        return new JAXBElement<TranscriptInfoArray>(_GetTranscriptsAndInfoResponseGetTranscriptsAndInfoResult_QNAME, TranscriptInfoArray.class, GetTranscriptsAndInfoResponse.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CacheEntryArray }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "getCacheResult", scope = GetCacheResponse.class)
+    public JAXBElement<CacheEntryArray> createGetCacheResponseGetCacheResult(CacheEntryArray value) {
+        return new JAXBElement<CacheEntryArray>(_GetCacheResponseGetCacheResult_QNAME, CacheEntryArray.class, GetCacheResponse.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Transcript }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "transcriptInfoResult", scope = TranscriptInfoResponse.class)
+    public JAXBElement<Transcript> createTranscriptInfoResponseTranscriptInfoResult(Transcript value) {
+        return new JAXBElement<Transcript>(_TranscriptInfoResponseTranscriptInfoResult_QNAME, Transcript.class, TranscriptInfoResponse.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TranscriptNameInfo }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "getGeneAndTranscriptResult", scope = GetGeneAndTranscriptResponse.class)
+    public JAXBElement<TranscriptNameInfo> createGetGeneAndTranscriptResponseGetGeneAndTranscriptResult(TranscriptNameInfo value) {
+        return new JAXBElement<TranscriptNameInfo>(_GetGeneAndTranscriptResponseGetGeneAndTranscriptResult_QNAME, TranscriptNameInfo.class, GetGeneAndTranscriptResponse.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link StringArray }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "getTranscriptsResult", scope = GetTranscriptsResponse.class)
+    public JAXBElement<StringArray> createGetTranscriptsResponseGetTranscriptsResult(StringArray value) {
+        return new JAXBElement<StringArray>(_GetTranscriptsResponseGetTranscriptsResult_QNAME, StringArray.class, GetTranscriptsResponse.class, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
      */
@@ -2257,21 +2211,66 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link StringArray }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ExonInfoArray }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "getdbSNPDescriptionsResult", scope = GetdbSNPDescriptionsResponse.class)
-    public JAXBElement<StringArray> createGetdbSNPDescriptionsResponseGetdbSNPDescriptionsResult(StringArray value) {
-        return new JAXBElement<StringArray>(_GetdbSNPDescriptionsResponseGetdbSNPDescriptionsResult_QNAME, StringArray.class, GetdbSNPDescriptionsResponse.class, value);
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "exons", scope = TranscriptInfo.class)
+    public JAXBElement<ExonInfoArray> createTranscriptInfoExons(ExonInfoArray value) {
+        return new JAXBElement<ExonInfoArray>(_MutalyzerOutputExons_QNAME, ExonInfoArray.class, TranscriptInfo.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link StringArray }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "getTranscriptsResult", scope = GetTranscriptsResponse.class)
-    public JAXBElement<StringArray> createGetTranscriptsResponseGetTranscriptsResult(StringArray value) {
-        return new JAXBElement<StringArray>(_GetTranscriptsResponseGetTranscriptsResult_QNAME, StringArray.class, GetTranscriptsResponse.class, value);
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "chromCDSStart", scope = TranscriptInfo.class)
+    public JAXBElement<BigInteger> createTranscriptInfoChromCDSStart(BigInteger value) {
+        return new JAXBElement<BigInteger>(_TranscriptInfoChromCDSStart_QNAME, BigInteger.class, TranscriptInfo.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ProteinTranscript }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "proteinTranscript", scope = TranscriptInfo.class)
+    public JAXBElement<ProteinTranscript> createTranscriptInfoProteinTranscript(ProteinTranscript value) {
+        return new JAXBElement<ProteinTranscript>(_TranscriptInfoProteinTranscript_QNAME, ProteinTranscript.class, TranscriptInfo.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "chromTransStart", scope = TranscriptInfo.class)
+    public JAXBElement<BigInteger> createTranscriptInfoChromTransStart(BigInteger value) {
+        return new JAXBElement<BigInteger>(_TranscriptInfoChromTransStart_QNAME, BigInteger.class, TranscriptInfo.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "chromCDSStop", scope = TranscriptInfo.class)
+    public JAXBElement<BigInteger> createTranscriptInfoChromCDSStop(BigInteger value) {
+        return new JAXBElement<BigInteger>(_TranscriptInfoChromCDSStop_QNAME, BigInteger.class, TranscriptInfo.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "chromTransEnd", scope = TranscriptInfo.class)
+    public JAXBElement<BigInteger> createTranscriptInfoChromTransEnd(BigInteger value) {
+        return new JAXBElement<BigInteger>(_TranscriptInfoChromTransEnd_QNAME, BigInteger.class, TranscriptInfo.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SoapMessageArray }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://mutalyzer.nl/2.0/services", name = "messages", scope = CheckSyntaxOutput.class)
+    public JAXBElement<SoapMessageArray> createCheckSyntaxOutputMessages(SoapMessageArray value) {
+        return new JAXBElement<SoapMessageArray>(_MappingMessages_QNAME, SoapMessageArray.class, CheckSyntaxOutput.class, value);
     }
 
 }

@@ -1,0 +1,15 @@
+<jaxws:bindings
+	wsdlLocation="https://mutalyzer.nl/services/?wsdl"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+	xmlns:jaxws="http://java.sun.com/xml/ns/jaxws"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb">
+	<jaxws:bindings node="wsdl:definitions/wsdl:types/xs:schema">
+		<jaxb:bindings node="//xs:complexType[@name='transcriptInfo']">
+			<jaxb:class name="TranscriptInfoByNM"/>
+		</jaxb:bindings>
+		<jaxb:bindings node="//xs:element[@name='transcriptInfo']">
+			<jaxb:class name="ElementTranscriptInfoByNM"/>
+		</jaxb:bindings>
+	</jaxws:bindings>
+</jaxws:bindings>

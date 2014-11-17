@@ -456,7 +456,7 @@ public interface Mutalyzer {
      */
     @WebMethod(action = "transcriptInfo")
     @WebResult(name = "transcriptInfoResult", targetNamespace = "http://mutalyzer.nl/2.0/services")
-    @RequestWrapper(localName = "transcriptInfo", targetNamespace = "http://mutalyzer.nl/2.0/services", className = "es.gbpa.mutalyzerWSClient.TranscriptInfo")
+    @RequestWrapper(localName = "transcriptInfo", targetNamespace = "http://mutalyzer.nl/2.0/services", className = "es.gbpa.mutalyzerWSClient.TranscriptInfoByNM")
     @ResponseWrapper(localName = "transcriptInfoResponse", targetNamespace = "http://mutalyzer.nl/2.0/services", className = "es.gbpa.mutalyzerWSClient.TranscriptInfoResponse")
     public Transcript transcriptInfo(
         @WebParam(name = "LOVD_ver", targetNamespace = "http://mutalyzer.nl/2.0/services")

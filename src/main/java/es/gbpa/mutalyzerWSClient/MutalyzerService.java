@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "MutalyzerService", targetNamespace = "http://mutalyzer.nl/2.0/services", wsdlLocation = "file:/home/parce/appl/bioinfo-java/mutalyzerWSClient_back/prueba/schema.wsdl")
+@WebServiceClient(name = "MutalyzerService", targetNamespace = "http://mutalyzer.nl/2.0/services", wsdlLocation = "https://mutalyzer.nl/services/?wsdl")
 public class MutalyzerService
     extends Service
 {
@@ -30,7 +30,7 @@ public class MutalyzerService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/home/parce/appl/bioinfo-java/mutalyzerWSClient_back/prueba/schema.wsdl");
+            url = new URL("https://mutalyzer.nl/services/?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
