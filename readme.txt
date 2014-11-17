@@ -1,7 +1,12 @@
 Mutalyzer WS Java Client
 ========================
 
-This package is a java client for Mutalyzer WebService (WSDL description: https://mutalyzer.nl/services/?wsdl)
+This package is a java client for Mutalyzer WebService:
+
+[ Wildeman M, van Ophuizen E, den Dunnen JT, Taschner PE. Improving sequence variant descriptions in mutation databases and literature using the MUTALYZER sequence variation nomenclature checker. ​Hum Mutat 29:6-13 (2008)​(PMID: 18000842). ]
+
+You can see the WebService WSDL description here: https://mutalyzer.nl/services/?wsdl
+
 This client works for Mutalyzer 2.0.3 version, released on 20 Oct 2014
 
 How I have made this client?
